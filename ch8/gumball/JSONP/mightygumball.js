@@ -1,9 +1,3 @@
-/* mightygumball.js */
-/*
- * get the content of a JSON file using JSONP
- * update every 3 seconds.
- *
- */
 var lastReportTime = 0;
 
 window.onload = init;
@@ -41,7 +35,6 @@ function updateSales(sales) {
     var div = document.createElement("div");
     div.setAttribute("class", "saleItem");
     div.innerHTML = sale.name + " sold " + sale.sales + " gumballs";
-    //salesDiv.appendChild(div);
     if (salesDiv.childElementCount == 0) {
       salesDiv.appendChild(div);
     } else {
